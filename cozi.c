@@ -8,8 +8,8 @@ Queue* createQueue(){
 	return q;
 }
 
- void enQueue(Queue*q, Data v){
-	Node* newNode=(Node*)malloc(sizeof(Node));
+ void enQueue(Queue*q, Dat v){
+	Nod* newNode=(Nod*)malloc(sizeof(Nod));
 	newNode->val=v;
 	newNode->next=NULL;
 	if (q->rear==NULL) q->rear=newNode;
@@ -20,8 +20,8 @@ Queue* createQueue(){
 	if (q->front==NULL) q->front=q->rear;
 }
 
-Data deQueue(Queue*q) {
-	Node* aux; Data d;
+Dat deQueue(Queue*q) {
+	Nod* aux; Dat d;
 	if (isEmptyCozi(q)) return INT_MIN;
 
 	aux=q->front;
@@ -36,7 +36,7 @@ int isEmptyCozi(Queue*q){
 }
 
 void deleteQueue(Queue*q){
-	Node* aux;
+	Nod* aux;
 	while (!isEmptyCozi(q)){
 		aux=q->front;
 		q->front=q->front->next;

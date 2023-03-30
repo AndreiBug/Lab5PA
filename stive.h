@@ -3,8 +3,7 @@
 
 typedef char Data;
 
-struct Node
-{
+struct Node{
     Data val;
     struct Node *next;
 };

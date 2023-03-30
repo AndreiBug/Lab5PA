@@ -1,28 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef int Data;
+typedef int Dat;
 
-struct Node
+struct Nod
 {
-    Data val;
-    struct Node *next;
+    Dat val;
+    struct Nod *next;
 };
 
-typedef struct Node Node;
+typedef struct Nod Nod;
 
 struct Queue
 {
-    Node *front ,*rear ;
+    Nod *front ,*rear ;
 };
 
 typedef struct Queue Queue ;
 
 Queue* createQueue();
 
-void enQueue(Queue *q, Data v);
+void enQueue(Queue *q, Dat v);
 
-Data deQueue(Queue *q);
+Dat deQueue(Queue *q);
 
 int isEmptyCozi(Queue *q);
 
